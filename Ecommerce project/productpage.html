@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+
+    <!--=============== FLATICON ===============-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--=============== MAIN CSS ===============-->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- <style>
+        header{
+            position: relative;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header id="header">
+    
+        <nav class=" nav container">
+
+            <a href="index.html" class="navbrand">
+                <span>E</span>clothes
+            </a>
+
+            <div class="navmenu">
+
+                <div class="menutoggletop" id="menutoggletop"> 
+                    <a href="index.html" class="menutogglelogo">
+                        <img src="assets/img/logo.svg" alt="">
+                    </a>
+
+                    <div class="navclose">
+                        <i class="fi fi-rs-cross"></i>
+                    </div>
+                </div>
+
+                <ul class="navitem">
+                    <li class="navlist">
+                        <a class="navlink" href="index.html">Home</a>
+                    </li>
+                    <li class="navlist">
+                        <a class="navlink" href="shop.html">Shop</a>
+                    </li>
+                    <li class="navlist">
+                        <a class="navlink" href="index.html">MyAccount</a>
+                    </li>
+                    <li class="navlist">
+                        <a class="navlink" href="index.html">Compare</a>
+                    </li>
+                    <li class="navlist">
+                        <a class="navlink" href="index.html">Login</a>
+                    </li>
+                </ul>
+
+                <div class="searchdiv">
+                    <input type="text" class="searchinput" placeholder="search for items...">
+                    <button class="searchbutton"><img src="/assets/img/search.png" alt="search"></button>
+                </div>
+            </div>
+
+            
+            <div class="navactionbtns flex">
+                <a href="cart.html" class="carticon">
+                    <img src="/assets/img/icon-cart.svg" alt="cart">
+                    <span id="cartcount" class="count">0</span>
+                </a>
+
+                <div class="navtoggle" id="navtoggle">
+                    <img src="assets/img/menu-burger.svg" alt="" width="30"> 
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+
+        
+    <!--=============== BREADCRUMBS ===============-->
+    <section class="breadcrumbs">
+        <div class="breadcrumbscontainer container">
+            <ul class="flex">
+                <li><a href="index.html" class="breadcrumblink">Home > </a></li>
+                <li><span class="breadcrumblink">Fashion > </span></li>
+                <li><span class="breadcrumblink">Henley Shirt</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--=============== PRODUCT GALLERY ===============-->
+    <section class="productgallery ">
+        <div class="productgallerycontainer container grid">
+            <div class="productimgsection">
+                <img src="/assets/img/product-8-1.jpg" alt="product" class="bigimg">
+                <div class="smallpic grid">
+                    <img src="/assets/img/product-8-2.jpg" alt="product" class="smallimg">
+                    <img src="/assets/img/product-8-1.jpg" alt="product" class="smallimg">
+                    <img src="/assets/img/product-8-2.jpg" alt="product" class="smallimg">
+                </div>
+            </div>
+            <div class="productdescsection">
+                <h2 class="productname">Henley Shirt</h2>
+                <p class="productbrand">Brands: <span>adidas</span></p>
+                <div class="pricegroup flex">
+                    <span class="newprice">$116</span>
+                    <span class="oldprice">$200.00</span>
+                    <span class="priceoff">25% Off</span>
+                </div>
+                <p class="productinfo">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis nulla
+                        numquam tempore cupiditate rerum facilis itaque ipsum harum deleniti nisi. 
+                        Voluptatum dolorem nulla reprehenderit earum iure deleniti quas voluptas harum.
+                </p>
+                <ul class="productwarranty">
+                    <li class="flex"><i class="fi fi-rs-crown"></i> 1 year AL Jazeera Brand Warranty</li>
+                    <li class="flex"><i class="fi fi-rs-refresh"></i> 30 Day return Policy</li>
+                    <li class="flex"><i class="fi fi-rs-credit-card"></i> Cash on Delivery available</li>
+                </ul>           
+                <ul class="productsize flex">
+                    <span>Size</span>
+                    <li class="productsizelist active"><a href="#">M</a></li>
+                    <li class="productsizelist"><a href="#">L</a></li>
+                    <li class="productsizelist"><a href="#">XL</a></li>
+                    <li class="productsizelist"><a href="#">XXL</a></li>
+                </ul>
+                <div class="productaddtocart">
+                    <input type="number" value="3" class="quantity">
+                    <a href="#" class="btn">Add to cart</a>
+                    <i class="fi fi-rs-heart"></i>  
+                </div>
+                <div class="productinfoextras">
+                    <p>SKU: FWM1SVKT</p>
+                    <p>Tags: Cloth,Women Dress</p>
+                    <p>Availability: 8 items in Stock</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--=============== PRODUCT GALLERY DETAILS INFO===============-->
+    <section class="details container">
+        <div class="detailstabs">
+            <span class="detailshead active_tab" data-target="#info">Additional Info</span>
+            <span class="detailshead" data-target="#reviews">Reviews (3)</span>
+        </div>
+        <div class="detailstabscontent">
+            <div class="details_tab_content active_tab" content id="info">
+                <table class="detailstable">
+                    <tr>
+                        <th>Description Size</th>
+                        <td>M,L,XL,XXL</td>
+                    </tr>
+                    <tr>
+                        <th>Fabric Material</th>
+                        <td>100% Polyester</td>
+                    </tr>
+                    <tr>
+                        <th>Suitable Type</th>
+                        <td>Loose Thickness</td>
+                    </tr>
+                    <tr>
+                        <th>Standard Color</th>
+                        <td>Multicolor</td>
+                    </tr>
+                    <tr>
+                        <th>Occasion</th>
+                        <td>leisure</td>
+                    </tr>
+                    <tr>
+                        <th>Width</th>
+                        <td>24</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="details_tab_content" content id="reviews">
+                <div class="reviewcontainer grid">
+                    <div class="reviewsingle">
+                        <div>
+                            <img src="assets/img/avatar-1.jpg" alt="avatar" class="reviewimg">
+                            <h4 class="reviewtitle">John Joe</h4>
+                        </div>
+                        <div class="reviewdata">
+                            <div class="reviewrating">
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                            </div>
+                            <p class="reviewdesc">
+                                Wonderful product, thank you for the fast delivery.
+                            </p>
+                            <div class="reviewdate">December 4, 2020 at 3:12 pm</div>
+                        </div>
+                    </div>
+                    <div class="reviewsingle">
+                        <div>
+                            <img src="assets/img/avatar-2.jpg" alt="avatar" class="reviewimg">
+                            <h4 class="reviewtitle">Ann Joe</h4>
+                        </div>
+                        <div class="reviewdata">
+                            <div class="reviewrating">
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                            </div>
+                            <p class="reviewdesc">
+                                Great discount for a great product.
+                            </p>
+                            <div class="reviewdate">December 4, 2020 at 3:12 pm</div>
+                        </div>
+                    </div>
+                    <div class="reviewsingle">
+                        <div>
+                            <img src="assets/img/avatar-3.jpg" alt="avatar" class="reviewimg">
+                            <h4 class="reviewtitle">Chris Joe</h4>
+                        </div>
+                        <div class="reviewdata">
+                            <div class="reviewrating">
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                                <i class="fi fi-rs-star"></i>
+                            </div>
+                            <p class="reviewdesc">
+                                Delivery was quick, product 100%!!
+                            </p>
+                            <div class="reviewdate">January 12, 2021 at 8:12 pm</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviewform">
+                    <h4 class="reviewformtitle">Add a Review</h4>
+                    <div class="productreviewrating">
+                        <i class="fi fi-rs-star"></i>
+                        <i class="fi fi-rs-star"></i>
+                        <i class="fi fi-rs-star"></i>
+                        <i class="fi fi-rs-star"></i>
+                        <i class="fi fi-rs-star"></i>
+                    </div>
+                    <form class="form grid">
+                        <textarea class="forminput textarea" placeholder="Write a comment"></textarea>
+
+                        <div class="formgroup grid">
+                            <input type="text" class="forminput" placeholder="Name">
+                            <input type="email" class="forminput" placeholder="Email">
+                        </div>
+
+                        <div class="formbtn">
+                            <button class="btn">Submit Review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== PRODUCTS ===============-->
+    <section class="products container">
+
+        <h3 class="sectionheader">Related Products</h3>
+
+        <div class="tabitems">
+
+            <div class="relatedtabcontainer grid">
+
+                <div class="productitem">
+                    <div class="productbanner">
+                        <a href="productpage.html" class="productimagelink">
+                            <img src="/assets/img/product-1-1.jpg" alt="product-1-1" class="productimage default">
+
+                            <img src="/assets/img/product-1-2.jpg" alt="product-1-1" class="productimage hover">
+                        </a>
+
+                        <div class="productactions">
+                            <a href="#" class="actionbtns" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+                            <a href="#" class="actionbtns" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+                            <a href="#" class="actionbtns" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+                        </div>
+
+                        <div class="productbadge light-pink">Hot</div>
+                    </div>
+
+                    <div class="productdesc">
+                        <span class="productcategory">Clothing</span>
+                        <a href="#"><h3 class="producttitle">Colorful Pattern Shirt</h3></a>
+                        <div class="productrating">
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                        </div>
+                        <div class="productprice">
+                            <span class="newprice">$238.85</span>
+                            <span class="oldprice">$250.00</span>
+                        </div>
+                        <a href="#" class="actionbtns cartbtn" aria-label="Add to Cart"><i class="fi fi-rs-shopping-bag"></i></a>
+                    </div>
+                </div>
+
+                <div class="productitem">
+                    <div class="productbanner">
+                        <a href="productpage.html" class="productimagelink">
+                            <img src="/assets/img/product-2-1.jpg" alt="product-1-1" class="productimage default">
+
+                            <img src="/assets/img/product-2-2.jpg" alt="product-1-1" class="productimage hover">
+                        </a>
+
+                        <div class="productactions">
+                            <a href="#" class="actionbtns" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+                            <a href="#" class="actionbtns" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+                            <a href="#" class="actionbtns" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+                        </div>
+
+                        <div class="productbadge light-green">Hot</div>
+                    </div>
+
+                    <div class="productdesc">
+                        <span class="productcategory">Clothing</span>
+                        <a href="#"><h3 class="producttitle">Colorful Pattern Shirt</h3></a>
+                        <div class="productrating">
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                        </div>
+                        <div class="productprice">
+                            <span class="newprice">$238.85</span>
+                            <span class="oldprice">$250.00</span>
+                        </div>
+                        <a href="#" class="actionbtns cartbtn" aria-label="Add to Cart"><i class="fi fi-rs-shopping-bag"></i></a>
+                    </div>
+                </div>
+
+                <div class="productitem">
+                    <div class="productbanner">
+                        <a href="productpage.html" class="productimagelink">
+                            <img src="/assets/img/product-3-1.jpg" alt="product-1-1" class="productimage default">
+
+                            <img src="/assets/img/product-3-2.jpg" alt="product-1-1" class="productimage hover">
+                        </a>
+
+                        <div class="productactions">
+                            <a href="#" class="actionbtns" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+                            <a href="#" class="actionbtns" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+                            <a href="#" class="actionbtns" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+                        </div>
+
+                        <div class="productbadge light-orange">Hot</div>
+                    </div>
+
+                    <div class="productdesc">
+                        <span class="productcategory">Clothing</span>
+                        <a href="#"><h3 class="producttitle">Sneakers</h3></a>
+                        <div class="productrating">
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                        </div>
+                        <div class="productprice">
+                            <span class="newprice">$238.85</span>
+                            <span class="oldprice">$250.00</span>
+                        </div>
+                        <a href="#" class="actionbtns cartbtn" aria-label="Add to Cart"><i class="fi fi-rs-shopping-bag"></i></a>
+                    </div>
+                </div>
+
+                <div class="productitem">
+                    <div class="productbanner">
+                        <a href="#" class="productimagelink">
+                            <img src="/assets/img/product-4-1.jpg" alt="product-1-1" class="productimage default">
+
+                            <img src="/assets/img/product-4-2.jpg" alt="product-1-1" class="productimage hover">
+                        </a>
+
+                        <div class="productactions">
+                            <a href="#" class="actionbtns" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
+                            <a href="#" class="actionbtns" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+                            <a href="#" class="actionbtns" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
+                        </div>
+
+                        <div class="productbadge light-blue">Hot</div>
+                    </div>
+
+                    <div class="productdesc">
+                        <span class="productcategory">Clothing</span>
+                        <a href="#"><h3 class="producttitle">Designer Pants</h3></a>
+                        <div class="productrating">
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                            <i class="fi-rs-star"></i>
+                        </div>
+                        <div class="productprice">
+                            <span class="newprice">$238.85</span>
+                            <span class="oldprice">$250.00</span>
+                        </div>
+                        <a href="#" class="actionbtns cartbtn" aria-label="Add to Cart"><i class="fi fi-rs-shopping-bag"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!--=============== NEWSLETTER ===============-->
+    <div class="newsletter">
+        <div class="newslettercontainer container grid">
+            <h3 class="newslettericon flex">
+                <img src="assets/img/icon-email.svg" alt="" width="30">
+                Sign up to Newsletter
+            </h3>
+            <p class="moreinfo">...and receive $25 coupon for the first shopping.</p>
+            <form class="newsletterinput">
+                <input type="text" class="newsinput" placeholder="Enter your email">
+                <button class="newsbtn" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    </main>
+
+
+    <!--=============== FOOTER ===============-->
+     <footer class="footer section">
+        <div class="footercontainer container grid">
+
+            <div class="firstwidget flex">
+
+                <div class="widgetbrand">
+                    <img src="/assets/img/logo.svg" alt="logo" class="footerbrand" width="100">
+                </div>             
+
+                <span class="seconadarytitle">Contact</span>
+
+                <div class="address">
+                    <p><span class="adresstitle">Address:</span> 562 Abc Road,Street 32, San Francisco</p>
+                    <p><span class="adresstitle">Phone:</span>+01 1234 567</p>
+                    <p><span class="adresstitle">Hours:</span>10:00 - 18:00, Mon - Sat</p>
+                </div>
+
+                <div class="socials">
+                    <span class="socialstitle">Follow Me</span>
+                    <div class="socialsicondiv flex">
+                        <a href="#"><img src="/assets/img/icon-facebook.svg" alt="fb" class="socialicon"></a>
+                        <a href="#"><img src="/assets/img/icon-twitter.svg" alt="tr" class="socialicon"></a>
+                        <a href="#"><img src="/assets/img/icon-instagram.svg" alt="ig" class="socialicon"></a>
+                        <a href="#"><img src="/assets/img/icon-pinterest.svg" alt="pt" class="socialicon"></a>
+                        <a href="#"><img src="/assets/img/icon-youtube.svg" alt="yt" class="socialicon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subwidget">
+                <h4 class="widgettitle">Address</h4>
+                <ul class="flex">
+                    <li><a href="#" class="footerlink">About Us</a></li>
+                    <li><a href="#" class="footerlink">Delivery Information</a></li>
+                    <li><a href="#" class="footerlink">Privacy Policy</a></li>
+                    <li><a href="#" class="footerlink">Terms & Conditions</a></li>
+                    <li><a href="#" class="footerlink">Contact Us</a></li>
+                    <li><a href="#" class="footerlink">Support Center</a></li>
+                </ul>
+            </div>
+
+            <div class="subwidget">
+                <h4 class="widgettitle">My Account</h4>
+                <ul class="flex">
+                    <li><a href="#" class="footerlink">Sign In</a></li>
+                    <li><a href="#" class="footerlink">View Cart</a></li>
+                    <li><a href="#" class="footerlink">My Wishlist</a></li>
+                    <li><a href="#" class="footerlink">Track My Order</a></li>
+                    <li><a href="#" class="footerlink">Help</a></li>
+                    <li><a href="#" class="footerlink">Other</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h4 class="widgettitle">Secured Payment Gateways</h4>
+
+                <div class="gatewayimg">
+                   <img src="/assets/img/payment-method.png" alt="gateway">
+                </div>
+
+            </div>
+        </div>
+            <div class="footerend container">
+                <span></span>
+               <div class="footerrights flex">
+                <p> &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved</p>
+                <p>Designed by ClemOsebs</p>
+               </div>
+            </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+
+    <!--=============== FLATICON ===============-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--=============== MAIN CSS ===============-->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- <style>
+        header{
+            position: relative;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header id="header" style="position: relative;">
+    
+        <nav class=" nav container">
+
+            <a href="index.html" class="navbrand">
+                <img src="/assets/img/logo.svg" alt="logo">
+            </a>
+
+            <div class="navmenu">
+                <ul class="navitem">
+                    <li class="navlist">
+                        <a class="navlink" href="index.html">Home</a>
+                    </li>
+                    <li class="navlist">
+                        <a class="navlink" href="shop.html">Shop</a>
+                    </li>
+                    <li class="navlist">
+                        <a class="navlink" href="index.html">MyAccount</a>
+                    </li>
+                    <li class="navlist">
+                        <a class="navlink" href="index.html">Compare</a>
+                    </li>
+                    <li class="navlist">
+                        <a class="navlink" href="index.html">Login</a>
+                    </li>
+                </ul>
+
+                <div class="searchdiv">
+                    <input type="text" class="searchinput" placeholder="search for items...">
+                    <button class="searchbutton"><img src="/assets/img/search.png" alt="search"></button>
+                </div>
+            </div>
+
+    
+            <a href="cart.html" class="carticon">
+                <img src="/assets/img/icon-cart.svg" alt="cart">
+                <span id="cartcount" class="count">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+
+        <!--=============== BREADCRUMBS ===============-->
+        <section class="breadcrumbs">
+            <div class="breadcrumbscontainer container">
+                <ul class="flex">
+                    <li><a href="index.html" class="breadcrumblink">Home > </a></li>
+                    <li><span class="breadcrumblink">Cart </span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section> </section>
+
+        <!--=============== NEWSLETTER ===============-->
+        <div class="newsletter">
+            <div class="newslettercontainer container flex">
+                <div class="newslettericon flex">
+                    <i class="fi fi-sr-envelope-download"></i>
+                    <span class="newslettertitle">Sign up to Newsletter</span>
+                </div>
+                <div class="moreinfo">
+                    <span>...and receive $25 coupon for the first shopping.</span>
+                </div>
+                <div class="newsletterinput">
+                    <input type="text" class="newsinput" placeholder="Enter your email">
+                    <button class="newsbtn btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!--=============== FOOTER ===============-->
+     <footer class="footer section">
+        <div class="footercontainer container grid">
+
+            <div class="firstwidget flex">
+
+                <div class="widgetbrand">
+                    <img src="/assets/img/logo.svg" alt="logo" class="footerbrand" width="100">
+                </div>             
+
+                <span class="seconadarytitle">Contact</span>
+
+                <div class="address">
+                    <p><span class="adresstitle">Address:</span> 562 Abc Road,Street 32, San Francisco</p>
+                    <p><span class="adresstitle">Phone:</span>+01 1234 567</p>
+                    <p><span class="adresstitle">Hours:</span>10:00 - 18:00, Mon - Sat</p>
+                </div>
+
+                <div class="socials">
+                    <span class="socialstitle">Follow Me</span>
+                    <div class="socialsicondiv flex">
+                        <a href="#"><img src="/assets/img/icon-facebook.svg" alt="fb" class="socialicon"></a>
+                        <a href="#"><img src="/assets/img/icon-twitter.svg" alt="tr" class="socialicon"></a>
+                        <a href="#"><img src="/assets/img/icon-instagram.svg" alt="ig" class="socialicon"></a>
+                        <a href="#"><img src="/assets/img/icon-pinterest.svg" alt="pt" class="socialicon"></a>
+                        <a href="#"><img src="/assets/img/icon-youtube.svg" alt="yt" class="socialicon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subwidget">
+                <h4 class="widgettitle">Address</h4>
+                <ul class="flex">
+                    <li><a href="#" class="footerlink">About Us</a></li>
+                    <li><a href="#" class="footerlink">Delivery Information</a></li>
+                    <li><a href="#" class="footerlink">Privacy Policy</a></li>
+                    <li><a href="#" class="footerlink">Terms & Conditions</a></li>
+                    <li><a href="#" class="footerlink">Contact Us</a></li>
+                    <li><a href="#" class="footerlink">Support Center</a></li>
+                </ul>
+            </div>
+
+            <div class="subwidget">
+                <h4 class="widgettitle">My Account</h4>
+                <ul class="flex">
+                    <li><a href="#" class="footerlink">Sign In</a></li>
+                    <li><a href="#" class="footerlink">View Cart</a></li>
+                    <li><a href="#" class="footerlink">My Wishlist</a></li>
+                    <li><a href="#" class="footerlink">Track My Order</a></li>
+                    <li><a href="#" class="footerlink">Help</a></li>
+                    <li><a href="#" class="footerlink">Other</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h4 class="widgettitle">Secured Payment Gateways</h4>
+
+                <div class="gatewayimg">
+                   <img src="/assets/img/payment-method.png" alt="gateway">
+                </div>
+
+            </div>
+        </div>
+            <div class="footerend container">
+                <span></span>
+               <div class="footerrights flex">
+                <p> &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved</p>
+                <p>Designed by ClemOsebs</p>
+               </div>
+            </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+</body>
